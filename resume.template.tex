@@ -1,0 +1,148 @@
+% will generate a `resume` pdf from a Markdown file with a YAML formatter
+% Calibri 11pt / Cambria 14pt / #365F91 rgb(54,95,145) / #000000
+
+% KOMA Article class
+\documentclass[11pt,a4paper]{scrartcl}
+
+% packages for font handling
+\usepackage{fontspec}
+\defaultfontfeatures{Mapping=text-text}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+
+% secsty allows us to modify how the headings look
+\usepackage{sectsty}
+
+% colors
+\usepackage{xcolor}
+\definecolor{AccentColor}{rgb}{0.5,0.0,0.4}
+\definecolor{TxtColor}{rgb}{0.2,0.2,0.2}
+
+% allow the user to redefine the colors
+$if(accentColor)$
+\definecolor{AccentColor}{rgb}{$accentColor$}
+$endif$
+$if(txtColor)$
+\definecolor{TxtColor}{rgb}{$txtColor$}
+$endif$
+
+% set colors for certain sections
+\partfont{\color{AccentColor}}
+\sectionfont{\color{TxtColor}}
+\subsectionfont{\color{TxtColor}}
+
+% set document's fonts
+\setmainfont{Roboto}
+\setsansfont{Roboto}
+
+% user can override the fonts in use
+$if(mainFont)$
+\setmainfont{$mainFont$}
+$endif$
+$if(sansFont)$
+\setsansfont{$sansFont$}
+$endif$
+
+% i18n / l10n
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+
+% user can set the language
+$if(lang)$
+\setmainlanguage[$for(polyglossia-lang.options)$$polyglossia-lang.options$$sep$,$endfor$]{$polyglossia-lang.name$}
+$for(polyglossia-otherlangs)$
+\setotherlanguage[$for(polyglossia-otherlangs.options)$$polyglossia-otherlangs.options$$sep$$endfor$]{$polyglossia-otherlangs.name$}
+$endfor$
+$endif$
+
+% page headers and footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{} % no page header
+\cfoot{\color{TxtColor}\thepage} % center footer
+% hide rulers
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% url makeup
+\usepackage[obeyspaces,spaces]{url}
+\usepackage[breaklinks,hidelinks]{hyperref}
+\urlstyle{same}
+
+% tex packages imports
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+% margins
+\usepackage[
+  left=3cm,
+  right=3cm,
+  top=2cm,
+  bottom=2cm,
+  includefoot
+]{geometry}
+
+% using 'enumitem' package for the sectioning, coloring and aligning
+\usepackage{enumitem}
+\setlist[description]{labelwidth=2cm,itemindent=-1cm,labelsep=1cm,
+                      align=right,left=2cm,font=\color{AccentColor}}
+
+% remove numbers in heading
+\makeatletter
+\renewcommand{\@seccntformat}[1]{}
+\makeatother
+
+% PDF metadata
+\author{$if(name)$$name$$else$Anonymous$endif$}
+\title{$if(name)$$name$$else$Anonymous$endif$ Resume}
+
+% document starting
+\begin{document}
+% switching color to <textcolor>
+\color{TxtColor}
+
+% 'name' property is needed for the heading
+\part*{$if(name)$$name$$else$Provide a name -->$endif$}
+
+% use 'minipages' to make a two-column layout
+\begin{minipage}[t]{0.48\textwidth}
+% show occupation
+$if(occupation)$
+\textbf{$occupation$} \\
+$endif$
+% show residence address
+$for(residence)$$residence$ $sep$ \\$endfor$
+\end{minipage}%
+\begin{minipage}[t]{0.48\textwidth}
+\begin{flushright}
+% show contact infos
+$if(contact)$
+  \textbf{Contact} \\
+    $for(contact)$
+    \url{$contact$}$sep$ \\
+    $endfor$
+$endif$
+\end{flushright}
+\end{minipage}
+
+% insert from MD
+$body$
+
+{\color{AccentColor}\rule{\linewidth}{0.5mm}}
+
+% traverse the 'sections'
+$for(sections)$
+\section*{$sections.title$}
+\begin{description}
+
+$for(sections.items)$
+\item [$if(sections.items.label)$$sections.items.label$$endif$] $for(sections.items.text)$$sections.items.text$$sep$ \newline $endfor$
+$endfor$
+
+\end{description}
+$endfor$
+
+\end{document}
+% document ended
