@@ -47,7 +47,7 @@ sections:
           - "Prepare ready to production packages for company's Windows based software solutions"
           - "Creation of deployment packages using MicroSoft technologies, Ant, XSLT"
           - "Research, development, and documentation on packaging and build processes"
-          - "Tumbleweed Communications Bulgaria / Axeway Software"
+          - "Tumbleweed Communications Bulgaria / Axway"
   - title: Education
     items:
       - label: 1998 - 2003
