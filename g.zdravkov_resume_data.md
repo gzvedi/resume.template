@@ -59,16 +59,16 @@ sections:
     items:
       - label: Coding
         text:
-          - "Python, Tcl, Shell"
-          - "JavaScript, TypeScript, HTML, CSS"
-      - label: Buliding and Configuration
-        text: "Docker, Concourse, Ant"
-      - label: Deployment
-        text: CloudFoundry CLI
+          - "Python, Shell, JavaScript"
+          - "TypeScript, HTML, CSS, Tcl"
       - label: Front-End / Back-End
         text: "ReactJS, Angular, Redux, RxJS, NgXS, Flux Architecture"
       - label: Data
         text: "RDBMs (PostgreSQL, MySQL, Oracle, MsSQL)"
+      - label: Buliding and Configuration
+        text: "Docker, Concourse, Ant"
+      - label: Deployment
+        text: CloudFoundry CLI
       - label: Project Management
         text: "Scrum, Agile"
       - label: Operating Systems
@@ -77,4 +77,4 @@ sections:
 
 # Research and Professional Interests
 
-Product Definition, Data Engineering and Sciene, Machine Learning
+Data Engineering and Science
