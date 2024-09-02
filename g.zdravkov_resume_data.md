@@ -17,7 +17,7 @@ sections:
         text:
           - "**DevOps Engineer for a move-to-cloud project**"
           - "An on-premise solution, providing digital financial tools, migrated to a cloud provider running within a Kubernetes cluster"
-          - "Solution's services provide API and tooling of a bank-to-client digital operations"
+          - "Solution's services provide API and tooling supporting bank-to-client digital operations"
           - "GCP, Terraform, GitLab, scripting, MySQL, NGINX, networking"
       - label: 2021 - 2022
         text:
