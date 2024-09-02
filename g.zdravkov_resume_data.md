@@ -13,12 +13,18 @@ sections:
       - text: IT products developer and support with educational background in mathematics and informatics. With more that 15 years of experience, taking parts in different project stages. Communicative and team oriented person, with investigate and create approach to problem solving.
   - title: Employment
     items:
+      - label: 2022 - present
+        text:
+          - "**DevOps Engineer for a move-to-cloud project**"
+          - "An on-premise solution, providing digital financial tools, migrated to a cloud provider running within a Kubernetes cluster"
+          - "Solution's services provide API and tooling of a bank-to-client digital operations"
+          - "GCP, Terraform, GitLab, scripting, MySQL, NGINX, networking"
       - label: 2021 - 2022
         text:
           - "**DevOps Engineer for the CloudFoundry Platform As A Service solution**"
           - "An open-source project supporting the top programming languages and developer frameworks out of the box by providing different buildpack containers"
           - "Monitoring and development tasks related to CloudFoundry releases, and its sub-projects"
-          - "IaaS & PaaS operational and monitoring tools, ELK stack, Docker, Concourse, Python and Golang projects. Deployments over AWS, GCP, Azure, AliCloud"
+          - "IaaS & PaaS operational and monitoring tools, ELK stack, Docker, Concourse, Python and Golang projects. CloudFoundry could be used for deployments over AWS, GCP, Azure, AliCloud"
           - "SAP Labs Bulgaria"
       - label: 2018 - 2020
         text:
@@ -59,7 +65,7 @@ sections:
     items:
       - label: Coding
         text:
-          - "Python, Shell, JavaScript"
+          - "Python, Terraform HCL, Shell, JavaScript"
           - "TypeScript, HTML, CSS, Tcl"
       - label: Front-End / Back-End
         text: "ReactJS, Angular, Redux, RxJS, NgXS, Flux Architecture"
@@ -68,7 +74,7 @@ sections:
       - label: Buliding and Configuration
         text: "Docker, Concourse, Ant"
       - label: Deployment
-        text: CloudFoundry CLI
+        text: "GitLab, CloudFoundry CLI"
       - label: Project Management
         text: "Scrum, Agile"
       - label: Operating Systems
@@ -77,4 +83,4 @@ sections:
 
 # Research and Professional Interests
 
-Data Engineering and Science
+Scripting, Configurations and Data Engineering
