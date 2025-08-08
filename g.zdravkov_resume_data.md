@@ -16,9 +16,10 @@ sections:
       - label: 2022 - 2025
         text:
           - "**DevOps Engineer for a move-to-cloud project**"
-          - "An on-premise solution, providing digital financial tools, migrated to a cloud provider running within a Kubernetes cluster"
-          - "Solution's services provide API and tooling supporting bank-to-client digital operations"
+          - "An on-premise ASPSP solution, providing digital financial tools, migrated to a cloud provider running within a Kubernetes cluster"
+          - "Solution's services provide API and tooling supporting bank-to-client digital operations under PSD2 regulations"
           - "GCP, Terraform, GitLab, scripting, MySQL, NGINX, networking"
+          - "Energize Global Services Bulgaria"
       - label: 2021 - 2022
         text:
           - "**DevOps Engineer for the CloudFoundry Platform As A Service solution**"
@@ -58,6 +59,8 @@ sections:
     items:
       - label: 1998 - 2003
         text: Informatics at Faculty of Mathematics and Informatics, Sofia University "St. Kliment Ohridski"
+      - label: 1994 - 1998
+        text: High School of Mathematics and Natural Sciences "Acad. N. Obreshkov", Burgas
   - title: Languages
     items:
       - text: "Bulgarian (native), English (proficient)"
@@ -75,12 +78,10 @@ sections:
         text: "Docker, Concourse, Ant"
       - label: Deployment
         text: "GitLab, CloudFoundry CLI"
-      - label: Project Management
-        text: "Scrum, Agile"
       - label: Operating Systems
         text: "Linux (Arch, CentOS, Ubuntu), MacOS, Windows"
 ---
 
 # Research and Professional Interests
 
-Scripting, Configurations and Data Engineering
+Scripting, Configurations , Cloud Infrastructures and Deployment, Data Engineering
