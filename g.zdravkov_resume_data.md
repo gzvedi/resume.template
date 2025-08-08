@@ -13,7 +13,7 @@ sections:
       - text: IT products developer and support with educational background in mathematics and informatics. With more that 15 years of experience, taking parts in different project stages. Communicative and team oriented person, with investigate and create approach to problem solving.
   - title: Employment
     items:
-      - label: 2022 - present
+      - label: 2022 - 2025
         text:
           - "**DevOps Engineer for a move-to-cloud project**"
           - "An on-premise solution, providing digital financial tools, migrated to a cloud provider running within a Kubernetes cluster"
