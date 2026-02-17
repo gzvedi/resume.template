@@ -77,8 +77,8 @@ $endif$
 
 % margins
 \usepackage[
-  left=3cm,
-  right=3cm,
+  left=2cm,
+  right=2cm,
   top=2cm,
   bottom=2cm,
   includefoot
@@ -137,8 +137,12 @@ $for(sections)$
 \section*{$sections.title$}
 \begin{description}
 
+% \item [$if(sections.items.label)$$for(sections.items.label)$$sections.items.label$$sep$ \newline $endfor$$endif$] $for(sections.items.text)$$sections.items.text$$sep$ \newline $endfor$
 $for(sections.items)$
-\item [$if(sections.items.label)$$sections.items.label$$endif$] $for(sections.items.text)$$sections.items.text$$sep$ \newline $endfor$
+\item [ $if(sections.items.label)$$sections.items.label$$endif$ ]
+  $for(sections.items.text)$
+    $sections.items.text$$sep$ \newline
+  $endfor$
 $endfor$
 
 \end{description}
