@@ -70,7 +70,7 @@ sections:
       - label: 1998 - 2003
         text:
           - "Informatics at Faculty of Mathematics and Informatics,"
-          - "Sofia University \"St. Kliment Ohridski\""
+          - "Sofia University \"St. Kliment Ohridski\", Sofia"
       - label: 1994 - 1998
         text: High School of Mathematics and Natural Sciences "Acad. N. Obreshkov", Burgas
   - title: Languages
